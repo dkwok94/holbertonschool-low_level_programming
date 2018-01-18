@@ -2,7 +2,8 @@
 /**
  *main - Entry point
  *
- *Description: The function prints lower case characters followed by uppercase letters
+ *Description: The function prints lower case characters followed by uppercase
+ *letter.
  *Return: 0 when run to successful completion
  */
 int main(void)
