@@ -3,23 +3,23 @@
  *main - Entry point
  *
  *Description: Function will print all single digit numbers in a comma separated
- *list
+ *list without the use of any char variables.
  *Return: 0 upon successful completion
  */
 int main(void)
 {
-	char num = '0';
+	int num = 48;
 
-	while (num <= '9')
+	while (num <= 57)
 	{
 		putchar(num);
-		if (num != '9')
+		if (num != 57)
 		{
-			putchar(',');
-			putchar(' ');
+			putchar(44);
+			putchar(32);
 		}
 		num++;
 	}
-	putchar('\n');
+	putchar(10);
 	return (0);
 }
