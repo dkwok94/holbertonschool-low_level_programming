@@ -2,7 +2,8 @@
 /**
  *main - Entry point
  *
- *Description: The function prints all single digit numbers of base 10 starting from 0
+ *Description: The function prints all single digit numbers of base 10 starting
+ *from 0.
  *Return: 0 upon successful completion
  */
 int main(void)
