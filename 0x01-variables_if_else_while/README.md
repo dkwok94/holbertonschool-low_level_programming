@@ -33,6 +33,8 @@
 **10-print_comb2.c**
 > This program will print all digits from ```00``` to ```99```in a comma separated list using the ```putchar``` function at most five times. It will end with a new line.
 
+### Advanced/Optional Script Assignments
+
 **100-print_comb3.c**
 > This program will print all combinations of two digits in a comma separated list. It will exclude duplicate combinations. Duplicate combinations are things like ```01``` and ```10```. However, they will print only the combination with the lowest value. So ```01``` is printed and not ```10``` in this example.
 
