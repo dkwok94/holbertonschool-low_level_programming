@@ -1,9 +1,13 @@
 #include <stdio.h>
 /**
- *main
+ *main - Entry point
  *
- *Description:
- *Return:
+ *Description: This program will print a comma separated list of all
+ *possible combinations of 2 numbers with no combinations repeated
+ *and the smallest valued combination appearing in the list over the
+ *others. For example (01 and 10 are the same combination and 01 will
+ *appear instead of 10 in the list).
+ *Return: 0 upon successful completion
  */
 int main(void)
 {
