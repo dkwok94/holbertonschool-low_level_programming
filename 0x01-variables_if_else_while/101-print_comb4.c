@@ -4,8 +4,8 @@
  *
  *Description: This program prints all combinations of 3 numbers without
  *repeating any combinations and only displaying the lowest value
- *combination. For example (012, 120, 102, 021, etc are all the same combination
- *but only 012 will be printed).
+ *combination. For example (012, 120, 102, 021, etc are all the same
+ *combination but only 012 will be printed).
  *Return: 0 upon successful completion
  */
 int main(void)
