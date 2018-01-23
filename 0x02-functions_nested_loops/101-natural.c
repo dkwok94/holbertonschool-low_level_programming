@@ -1,10 +1,10 @@
 #include <stdio.h>
 /**
+ *main - Multiple of 3 and 5 sum calculator
  *
- *
- *
- *
- *
+ *Description: This program prints the sum of all multiples of 3
+ *and 5 up to and excluding 1024 followed by a new line.
+ *Return: 0 upon successful completion
  */
 int main(void)
 {
@@ -28,4 +28,5 @@ int main(void)
 		product_5 = 5 * counter;
 	}
 	printf("%d\n", sum);
+	return (0);
 }
