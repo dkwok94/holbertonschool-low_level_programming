@@ -1,9 +1,9 @@
 #include "holberton.h"
 /**
+ *main - Entry point function
  *
- *
- *
- *
+ *Description: This function prints "Holberton"
+ *Return: 0 upon successful completion
  */
 int main(void)
 {
