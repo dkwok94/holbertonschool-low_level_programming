@@ -9,17 +9,17 @@
 int main(void)
 {
 	int nthfibonacci = 3;
-	unsigned long long fibonacci;
-	unsigned long long nminus1 = 2;
-	unsigned long long nminus2 = 1;
+	unsigned long fibonacci;
+	unsigned long nminus1 = 2;
+	unsigned long nminus2 = 1;
 
-	printf("%llu, ", nminus2);
-	printf("%llu, ", nminus1);
+	printf("%lu, ", nminus2);
+	printf("%lu, ", nminus1);
 
 	while (nthfibonacci <= 50)
 	{
 		fibonacci = nminus1 + nminus2;
-		printf("%llu", fibonacci);
+		printf("%lu", fibonacci);
 		if (nthfibonacci < 50)
 			printf(", ");
 		nminus2 = nminus1;
