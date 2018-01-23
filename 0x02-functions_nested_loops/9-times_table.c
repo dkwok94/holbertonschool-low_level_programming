@@ -23,14 +23,16 @@ void times_table(void)
 			}
 			else
 			{
-				_putchar(' ');
-				_putchar(' ');
+				/*There should be no spaces before 0 column*/
+				if (num != 0)
+				{
+					_putchar(' ');
+					_putchar(' ');
+				}
 				_putchar((row * num) + '0');
 			}
 			if (num != 9)
-			{
 				_putchar(',');
-			}
 			num++;
 		}
 		_putchar('\n');
