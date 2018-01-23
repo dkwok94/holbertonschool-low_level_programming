@@ -11,7 +11,7 @@ int main(void)
 	unsigned long fibonacci;
 	unsigned long nminus2 = 1;
 	unsigned long nminus1 = 2;
-	unsigned long sum = 3;
+	unsigned long sum = 2;
 
 	fibonacci = nminus2 + nminus1;
 	while (fibonacci < 4000000)
