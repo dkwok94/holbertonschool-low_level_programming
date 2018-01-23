@@ -8,17 +8,17 @@
 int main(void)
 {
 	int nthfibonacci = 3;
-	long double fibonacci;
-	long double nminus2 = 1;
-	long double nminus1 = 2;
+	double fibonacci;
+	double nminus2 = 1;
+	double nminus1 = 2;
 
-	printf("%.0Lf, ", nminus2);
-	printf("%.0Lf, ", nminus1);
+	printf("%.0f, ", nminus2);
+	printf("%.0f, ", nminus1);
 
 	while (nthfibonacci <= 98)
 	{
 		fibonacci = nminus2 + nminus1;
-		printf("%.0Lf", fibonacci);
+		printf("%.0f", fibonacci);
 		if (nthfibonacci < 98)
 			printf(", ");
 		nminus2 = nminus1;
