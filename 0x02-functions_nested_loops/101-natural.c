@@ -23,7 +23,10 @@ int main(void)
 	counter = 1;
 	while (product_5 < 1024)
 	{
-		sum += product_5;
+		/*Avoid double counting*/
+		if ((product_5 % 3) != 0)
+			sum += product_5;
+
 		counter++;
 		product_5 = 5 * counter;
 	}
