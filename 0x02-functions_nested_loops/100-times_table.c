@@ -2,7 +2,7 @@
 #include "holberton.h"
 /**
  *print_times_table - prints a multiplication table for numbers
- *between 1 and 15
+ *between 1 and 14
  *@n: The number of columns in the table (largest number)
  *
  *Return: void
@@ -10,10 +10,10 @@
 void print_times_table(int n)
 {
 	int row = 0;
-	int column = 0;
+	int column;
 	int product;
 
-	if ((n < 15) && (n > 0))
+	if ((n < 15) && (n >= 0))
 	{
 		while (row <= n)
 		{
