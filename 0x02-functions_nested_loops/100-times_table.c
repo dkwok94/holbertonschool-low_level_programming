@@ -13,7 +13,7 @@ void print_times_table(int n)
 	int column = 0;
 	int product;
 
-	if ((n <= 15) && (n > 0))
+	if ((n < 15) && (n > 0))
 	{
 		while (row <= n)
 		{
@@ -85,6 +85,7 @@ void greaterthan99(int product)
  *@column: the column of the current product. Important because the target
  *format is there are no spaces before numbers in column 0 (first vertical
  *column)
+ *
  *Description: This function prints the number and space sequences for products
  *smaller than 9
  *Return: void
