@@ -43,7 +43,6 @@ int howmanynumbers(int n)
  *@n: A number to print
  *
  *Description: This function prints any integer using only putchar
- *and no longs, arrays/points, or hard-coded values
  *Return: void
  */
 void print_number(int n)
