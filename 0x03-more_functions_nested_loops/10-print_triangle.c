@@ -13,7 +13,7 @@ void print_triangle(int size)
 	int pounds = 1;
 	int rows = 1;
 
-	if (size == 0)
+	if (size <= 0)
 	{
 		_putchar('\n');
 		return;
