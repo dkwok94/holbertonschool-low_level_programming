@@ -1,4 +1,8 @@
 #include "holberton.h"
+
+int howmanynumbers(int n);
+int powerbaseten(int baseten, int basetenplaces);
+
 /**
  *print_number - Prints an integer using only putchar
  *@n: A number to print
