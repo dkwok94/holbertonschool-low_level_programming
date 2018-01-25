@@ -1,40 +1,5 @@
 #include "holberton.h"
 
-int howmanynumbers(int n);
-int powerbaseten(int baseten, int basetenplaces);
-
-/**
- *print_number - Prints an integer using only putchar
- *@n: A number to print
- *
- *Description: This function prints any integer using only putchar
- *and no longs, arrays/points, or hard-coded values
- *Return: void
- */
-void print_number(int n)
-{
-	int digits = howmanynumbers(n);
-	int count = 0;
-	int baseten = 1;
-	int basetenplaces = digits - 1;
-
-	baseten = powerbaseten(baseten, basetenplaces);
-	while (count < digits)
-	{
-		if (n < 0)
-		{
-			if (count == 0)
-				_putchar('-');
-			_putchar((-1 * (n / baseten)) + '0');
-		}
-		else
-			_putchar((n / baseten) + '0');
-		n = n % baseten;
-		baseten /= 10;
-		count++;
-	}
-}
-
 /**
  *powerbaseten - calculates the largest factor of 10
  *@baseten: the final base ten factor
@@ -72,4 +37,36 @@ int howmanynumbers(int n)
 		counter++;
 	}
 	return (counter);
+}
+
+/**
+ *print_number - Prints an integer using only putchar
+ *@n: A number to print
+ *
+ *Description: This function prints any integer using only putchar
+ *and no longs, arrays/points, or hard-coded values
+ *Return: void
+ */
+void print_number(int n)
+{
+	int digits = howmanynumbers(n);
+	int count = 0;
+	int baseten = 1;
+	int basetenplaces = digits - 1;
+
+	baseten = powerbaseten(baseten, basetenplaces);
+	while (count < digits)
+	{
+		if (n < 0)
+		{
+			if (count == 0)
+				_putchar('-');
+			_putchar((-1 * (n / baseten)) + '0');
+		}
+		else
+			_putchar((n / baseten) + '0');
+		n = n % baseten;
+		baseten /= 10;
+		count++;
+	}
 }
