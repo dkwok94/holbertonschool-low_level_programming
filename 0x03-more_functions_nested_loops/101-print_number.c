@@ -14,16 +14,17 @@ void print_number(int n)
 	int baseten = 1;
 	int basetenplaces = digits - 1;
 
-	baseten = powerbaseten(1, basetenplaces);
+	baseten = powerbaseten(baseten, basetenplaces);
 	while (count < digits)
 	{
 		if (n < 0)
 		{
-			n = -n;
-			_putchar('-');
+			if (count == 0)
+				_putchar('-');
+			_putchar((-1 * (n / baseten)) + '0');
 		}
-
-		_putchar((n / baseten) + '0');
+		else
+			_putchar((n / baseten) + '0');
 		n = n % baseten;
 		baseten /= 10;
 		count++;
