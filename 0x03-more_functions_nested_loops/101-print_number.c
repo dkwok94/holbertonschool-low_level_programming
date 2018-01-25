@@ -1,5 +1,4 @@
 #include "holberton.h"
-
 /**
  *powerbaseten - calculates the largest factor of 10
  *@baseten: the final base ten factor
@@ -49,11 +48,13 @@ int howmanynumbers(int n)
  */
 void print_number(int n)
 {
-	int digits = howmanynumbers(n);
+	int digits;
 	int count = 0;
 	int baseten = 1;
-	int basetenplaces = digits - 1;
+	int basetenplaces;
 
+	digits = howmanynumbers(n);
+	basetenplaces = digits - 1;
 	baseten = powerbaseten(baseten, basetenplaces);
 	while (count < digits)
 	{
