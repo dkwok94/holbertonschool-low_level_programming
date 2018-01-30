@@ -9,7 +9,7 @@ int _atoi(char *s)
 {
 	int i = 0;
 	int tens = 1;
-	int integer = 0;
+	unsigned int integer = 0;
 	int isnegative = 0;
 	int numnegs = 0;
 	int numpos = 0;
@@ -38,7 +38,7 @@ int _atoi(char *s)
 	if (isnegative == 1)
 		integer *= -1;
 
-	return (integer);
+	return ((int) integer);
 }
 
 /**
@@ -50,7 +50,7 @@ int _atoi(char *s)
  */
 int findtensplaces(int i, char *s)
 {
-	int tens = 1;
+	unsigned long tens = 1;
 
 	while (s[i] >= '0' && s[i] <= '9')
 	{
@@ -58,5 +58,5 @@ int findtensplaces(int i, char *s)
 		i++;
 	}
 	tens /= 10;
-	return (tens);
+	return ((int) tens);
 }
