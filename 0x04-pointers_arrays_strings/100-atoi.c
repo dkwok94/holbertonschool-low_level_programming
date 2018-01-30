@@ -22,6 +22,9 @@ int _atoi(char *s)
 			numpos++;
 		i++;
 	}
+	if (s[i] == '\0')
+		return (0);
+
 	if (numnegs > numpos)
 		isnegative = 1;
 
