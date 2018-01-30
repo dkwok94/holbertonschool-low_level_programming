@@ -10,4 +10,4 @@ void puts_half(char *str);
 void print_array(int *a, int n);
 char *_strcpy(char *dest, char *src);
 int _atoi(char *s);
-unsigned int findtensplaces(int i, char *s);
+int findtensplaces(int i, char *s);

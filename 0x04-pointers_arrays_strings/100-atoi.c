@@ -9,8 +9,8 @@
 int _atoi(char *s)
 {
 	int i = 0;
-	unsigned int tens = 1;
-	unsigned int integer = 0;
+	int tens = 1;
+	int integer = 0;
 	int isnegative = 0;
 	int numnegs = 0;
 	int numpos = 0;
@@ -46,9 +46,9 @@ int _atoi(char *s)
  *
  *Return: the tens multiplier
  */
-unsigned int findtensplaces(int i, char *s)
+int findtensplaces(int i, char *s)
 {
-	unsigned int tens = 1;
+	int tens = 1;
 
 	while (s[i] >= '0' && s[i] <= '9')
 	{
