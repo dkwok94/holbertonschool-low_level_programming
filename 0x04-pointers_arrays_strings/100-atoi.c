@@ -25,7 +25,7 @@ int _atoi(char *s)
 	if (s[i] == '\0')
 		return (0);
 
-	if (numnegs > numpos)
+	if ((numnegs % 2) != 0)
 		isnegative = 1;
 
 	tens = findtensplaces(i, s);
