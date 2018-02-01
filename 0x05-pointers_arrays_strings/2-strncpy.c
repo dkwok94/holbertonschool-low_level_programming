@@ -12,20 +12,18 @@ char *_strncpy(char *dest, char *src, int n)
 	int counter = 0;
 	char *origin = dest;
 
-	while (counter < n)
+	while ((counter < n) && *src != '\0')
 	{
 		*dest = *src;
 		dest++;
 		src++;
 		counter++;
-
-		if (*src == '\0')
-			while (counter < n)
-			{
-				*dest = '\0';
-				counter++;
-				dest++;
-			}
+	}
+	while (counter < n)
+	{
+		*dest = '\0';
+		counter++;
+		dest++;
 	}
 	return (origin);
 }
