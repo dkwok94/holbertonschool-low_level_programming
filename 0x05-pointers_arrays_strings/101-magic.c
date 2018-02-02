@@ -1,5 +1,10 @@
 #include <stdio.h>
-
+/**
+ *main - entry point
+ *
+ *Description: Changes the value of an array element via memory
+ *Return: 0 when complete successfully
+ */
 int main(void)
 {
 	int n;
