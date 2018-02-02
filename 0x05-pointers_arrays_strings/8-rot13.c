@@ -1,10 +1,9 @@
 #include "holberton.h"
 /**
+ *rot13 - encrypts a string in rot13
+ *@str: string to encrypt
  *
- *
- *
- *
- *
+ *Return: pointer to the encrypted string
  */
 char *rot13(char *str)
 {
