@@ -7,7 +7,7 @@
  */
 void print_number(int n)
 {
-	unsigned storage = n;
+	unsigned int storage = n;
 	int tens = 1;
 	int isnegative = 0;
 
@@ -42,7 +42,7 @@ void print_number(int n)
  *
  *Return: The tens multiplier
  */
-int findtens (int n)
+int findtens(int n)
 {
 	int tens = 1;
 
