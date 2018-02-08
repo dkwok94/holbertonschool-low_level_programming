@@ -12,4 +12,4 @@ int primetest(int n, int counter);
 int strlength(char *s);
 int iteratepalindrome(char *s, char *start, int counter);
 int wildcmp(char *s1, char *s2);
-int asterisks(char *s1, char *s2);
+int asterisks(char *s1, char *s2, char *asterisks);
