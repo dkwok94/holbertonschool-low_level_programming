@@ -24,6 +24,13 @@ int wildcmp(char *s1, char *s2)
 		return (0);
 }
 
+/**
+ *asterisks - iterates over asterisks and decides on activity
+ *@s1: first string
+ *@s2: second string
+ *
+ *Return: 1 if the strings are the same, 0 if not
+ */
 int asterisks(char *s1, char *s2)
 {
 
