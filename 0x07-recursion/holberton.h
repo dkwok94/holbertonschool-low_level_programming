@@ -9,3 +9,5 @@ int is_prime_number(int n);
 int is_palindrome(char *s);
 int test(int n, int g);
 int primetest(int n, int counter);
+int strlength(char *s);
+int iteratepalindrome(char *s, char *start, int counter);
