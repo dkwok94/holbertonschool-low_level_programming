@@ -37,13 +37,13 @@ int wildcmp(char *s1, char *s2)
 int asterisks(char *s1, char *s2, char *origin)
 {
 
-	if (*s2 == '*')
+	if (*s2 == '*') /*Iterate over series of '*' */
 	{
 		s2++;
 		return (asterisks(s1, s2, origin));
 	}
 
-	else if (*s2 == '\0')
+	else if (*s2 == '\0') /*If you hit '\0'*/
 	{
 		if (*s1 == *origin)
 			return (1);
@@ -53,12 +53,17 @@ int asterisks(char *s1, char *s2, char *origin)
 			return (1);
 	}
 
-	else
+	else /*If you hit another character*/
 	{
 		if (*s1 != *s2)
 		{
-			s1++;
-			return (asterisks(s1, s2, origin));
+			if (*s1 == '\0')
+				return (0);
+			else
+			{
+				s1++;
+				return (asterisks(s1, s2, origin));
+			}
 		}
 
 		else if (*s1 == '\0')
