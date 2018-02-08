@@ -42,7 +42,6 @@ int asterisks(char *s1, char *s2, char *origin)
 		s2++;
 		return (asterisks(s1, s2, origin));
 	}
-
 	else if (*s2 == '\0') /*If you hit '\0'*/
 	{
 		if (*s1 == *origin)
@@ -52,20 +51,20 @@ int asterisks(char *s1, char *s2, char *origin)
 		else
 			return (1);
 	}
-
 	else /*If you hit another character*/
 	{
 		if (*s1 != *s2)
 		{
 			if (*s1 == '\0')
+			{
 				return (0);
+			}
 			else
 			{
 				s1++;
 				return (asterisks(s1, s2, origin));
 			}
 		}
-
 		else if (*s1 == '\0')
 			return (0);
 
