@@ -44,7 +44,7 @@ int main(int argc, char *argv[])
  *@j: counter for iteration over string
  *@str: string to iterate over
  *
- *Return; 1 if number, 0 if not a number
+ *Return: 1 if number, 0 if not a number
  */
 int checknum(int j, char *str)
 {
