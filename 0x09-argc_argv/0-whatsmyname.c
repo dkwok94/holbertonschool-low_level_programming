@@ -1,6 +1,7 @@
 #include <stdio.h>
 /**
  *main - entry point
+ *@argc: number of command line arguments
  *@argv: array of pointers to argument strings
  *
  *Description: Prints the program's name followed by newline
