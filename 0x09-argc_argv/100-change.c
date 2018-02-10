@@ -42,4 +42,5 @@ int main(int argc, char *argv[])
 			i++;
 	}
 	printf("%d\n", moneycounter);
+	return (0);
 }
