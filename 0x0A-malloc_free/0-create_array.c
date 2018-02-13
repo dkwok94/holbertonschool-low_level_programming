@@ -1,4 +1,5 @@
 #include "holberton.h"
+#include <stdio.h>
 #include <stdlib.h>
 /**
  *create_array - creates an array of chars and initializes with specific char
@@ -10,14 +11,15 @@
 char *create_array(unsigned int size, char c)
 {
 	unsigned int i = 0;
+	char *chararray;
 
 	if (size == 0)
-		return (0);
+		return (NULL);
 
-	char *chararray = malloc(sizeof(char) * size);
+	chararray = malloc(sizeof(char) * size);
 
-	if (chararray == 0)
-		return (0);
+	if (chararray == NULL)
+		return (NULL);
 
 	while (i < size)
 	{
