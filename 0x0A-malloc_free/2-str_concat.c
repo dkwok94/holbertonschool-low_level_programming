@@ -15,9 +15,16 @@ char *str_concat(char *s1, char *s2)
 	char *concatenate;
 
 	if (s1 == NULL)
+	{
+		s1 = malloc(sizeof(char));
 		*s1 = '\0';
+	}
 	if (s2 == NULL)
+	{
+		s2 = malloc(sizeof(char));
 		*s2 = '\0';
+	}
+
 	lengths1 = _strlen(s1);
 	lengths2 = _strlen(s2);
 
@@ -30,7 +37,7 @@ char *str_concat(char *s1, char *s2)
 
 /**
  *_strlen - calculates the length of a string
- *@str - string to calculate the length of
+ *@str: string to calculate the length of
  *
  *Return: length of string
  */
