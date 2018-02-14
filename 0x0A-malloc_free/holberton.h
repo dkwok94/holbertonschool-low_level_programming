@@ -11,4 +11,5 @@ int findlength(int ac, char **av);
 char *writeconcat(char *concatstr, int ac, char **av);
 char **strtow(char *str);
 int wordcount(char *str);
-int addword(int i, char *str, char *array);
+int lettercount(int i, char *str);
+int fillarray(int i, char *str, char *array);
