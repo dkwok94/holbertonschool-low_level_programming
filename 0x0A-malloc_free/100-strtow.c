@@ -41,7 +41,7 @@ char **strtow(char *str)
 			aindex++;
 		}
 	}
-	array[wcount - 1] = NULL;
+	array[aindex] = NULL;
 	return (array);
 }
 
