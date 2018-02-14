@@ -10,16 +10,20 @@
 char **strtow(char *str)
 {
 	int i = 0;
-	int arrayindex = 0;
+	int aindex = 0;
 	int wcount = 0;
 	char **array;
+	int letters;
+	int startofword;
 
 	if (str == NULL || *str == '\0')
 		return (NULL);
 
 	wcount = wordcount(str);
 
-	array = malloc(sizeof(char *) * wcount);
+	array = malloc(sizeof(char *) * (wcount + 1));
+	if (array == NULL)
+		return (NULL);
 
 	while (*(str + i) != '\0')
 	{
@@ -28,10 +32,16 @@ char **strtow(char *str)
 
 		else
 		{
-			i = addword(i, str, array[arrayindex]);
-			arrayindex++;
+			startofword = i;
+			letters = lettercount(startofword, str);
+			array[aindex] = malloc(sizeof(char) * (letters + 1));
+			if (array[aindex] == NULL)
+				return (NULL);
+			i = fillarray(startofword, str, array[aindex]);
+			aindex++;
 		}
 	}
+	array[aindex] = NULL;
 	return (array);
 }
 
@@ -65,25 +75,33 @@ int wordcount(char *str)
  *addword - allocates memory and adds string to it
  *@i: index where the word in the string begins
  *@str: string of interest
- *@array: the array to write the words to
  *
  *Return: the position of string right after the word
  */
-int addword(int i, char *str, char *array)
+int lettercount(int i, char *str)
+{
+	int letters = 0;
+
+	while (*(str + i) != ' ')
+	{
+		letters++;
+		i++;
+	}
+	return (letters);
+}
+
+/**
+ *fillarray - fills the array with a word
+ *@i: the index where the word starts
+ *@str: the string to separate
+ *@array: the array to write to
+ *
+ *Return: location where the word ends
+ */
+int fillarray(int i, char *str, char *array)
 {
 	int counter = 0;
-	int lettercount = 0;
 
-	counter = i;
-	while (*(str + counter) != ' ')
-	{
-		lettercount++;
-		counter++;
-	}
-
-	array = malloc(sizeof(char) * (lettercount + 1));
-
-	counter = 0;
 	while (*(str + i) != ' ')
 	{
 		*(array + counter) = *(str + i);
