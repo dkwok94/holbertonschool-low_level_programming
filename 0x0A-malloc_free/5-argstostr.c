@@ -17,6 +17,8 @@ char *argstostr(int ac, char **av)
 		return (NULL);
 
 	concatstr = malloc(sizeof(char) * length);
+	if (concatstr == NULL)
+		return (NULL);
 	return (writeconcat(concatstr, ac, av));
 
 }
