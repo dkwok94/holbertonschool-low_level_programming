@@ -41,7 +41,7 @@ char **strtow(char *str)
 			aindex++;
 		}
 	}
-	array[aindex] = NULL;
+	array[wcount - 1] = NULL;
 	return (array);
 }
 
@@ -72,7 +72,7 @@ int wordcount(char *str)
 }
 
 /**
- *addword - allocates memory and adds string to it
+ *lettercount - allocates memory and adds string to it
  *@i: index where the word in the string begins
  *@str: string of interest
  *
