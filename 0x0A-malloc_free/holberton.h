@@ -7,3 +7,5 @@ char *argstostr(int ac, char **av);
 int _putchar(char c);
 char *_concat(char *concatenate, char *s1, char *s2);
 int _strlen(char *str);
+int findlength(int ac, char **av);
+char *writeconcat(char *concatstr, int ac, char **av);
