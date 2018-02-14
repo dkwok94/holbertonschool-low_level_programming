@@ -61,6 +61,14 @@ int wordcount(char *str)
 	return (wcount);
 }
 
+/**
+ *addword - allocates memory and adds string to it
+ *@i: index where the word in the string begins
+ *@str: string of interest
+ *@array: the array to write the words to
+ *
+ *Return: the position of string right after the word
+ */
 int addword(int i, char *str, char *array)
 {
 	int counter = 0;
