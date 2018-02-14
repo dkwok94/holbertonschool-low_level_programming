@@ -9,18 +9,14 @@
  */
 char **strtow(char *str)
 {
-	int i = 0;
-	int aindex = 0;
-	int wcount = 0;
+	int i = 0, wcount = 0, aindex = 0;
+	int letters, startofword;
 	char **array;
-	int letters;
-	int startofword;
 
 	if (str == NULL || *str == '\0')
 		return (NULL);
 
 	wcount = wordcount(str);
-
 	array = malloc(sizeof(char *) * (wcount + 1));
 	if (array == NULL)
 		return (NULL);
@@ -29,14 +25,20 @@ char **strtow(char *str)
 	{
 		if (*(str + i) == ' ' || *(str + i) == '\t')
 			i++;
-
 		else
 		{
 			startofword = i;
 			letters = lettercount(startofword, str);
 			array[aindex] = malloc(sizeof(char) * (letters + 1));
 			if (array[aindex] == NULL)
+			{
+				while (aindex >= 0)
+				{
+					free(array[aindex]);
+					aindex--;
+				}
 				return (NULL);
+			}
 			i = fillarray(startofword, str, array[aindex]);
 			aindex++;
 		}
