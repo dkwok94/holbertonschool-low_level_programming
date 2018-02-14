@@ -9,3 +9,6 @@ char *_concat(char *concatenate, char *s1, char *s2);
 int _strlen(char *str);
 int findlength(int ac, char **av);
 char *writeconcat(char *concatstr, int ac, char **av);
+char **strtow(char *str);
+int wordcount(char *str);
+int addword(int i, char *str, char *array);
