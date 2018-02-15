@@ -19,10 +19,10 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	array = malloc(nmemb * size);
 	if (array == NULL)
 		return (NULL);
-	while (counter < nmemb)
+	while (counter < (nmemb * size))
 	{
 		*((char *)array + counter) = 0;
 		counter++;
 	}
-	return ((void *)array);
+	return (array);
 }
