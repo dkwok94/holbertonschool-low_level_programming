@@ -25,7 +25,7 @@ char **strtow(char *str)
 
 	while (*(str + i) != '\0')
 	{
-		if (*(str + i) == ' ' || *(str + i) == '\t')
+		if (*(str + i) == ' ')
 			i++;
 		else
 		{
@@ -36,7 +36,7 @@ char **strtow(char *str)
 			{
 				while (aindex >= 0)
 				{
-					free(array[aindex]);
+					free(array[aindex - 1]);
 					aindex--;
 				}
 				free(array);
@@ -63,13 +63,13 @@ int wordcount(char *str)
 
 	while (*(str + i) != '\0')
 	{
-		if (*(str + i) == ' ' || *(str + i) == '\t')
+		if (*(str + i) == ' ')
 			i++;
 
 		else
 		{
 			wcount++;
-			while (*(str + i) != ' ' && *(str + i) != '\t')
+			while (*(str + i) != ' ')
 				i++;
 		}
 	}
@@ -87,7 +87,7 @@ int lettercount(int i, char *str)
 {
 	int letters = 0;
 
-	while (*(str + i) != ' ' && *(str + i) != '\t')
+	while (*(str + i) != ' ')
 	{
 		letters++;
 		i++;
@@ -107,7 +107,7 @@ int fillarray(int i, char *str, char *array)
 {
 	int counter = 0;
 
-	while (*(str + i) != ' ' && *(str + i) != '\t')
+	while (*(str + i) != ' ')
 	{
 		*(array + counter) = *(str + i);
 		i++;
