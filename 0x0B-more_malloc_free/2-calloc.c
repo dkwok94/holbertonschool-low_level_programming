@@ -11,6 +11,7 @@
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	void *array;
+	unsigned int counter = 0;
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
@@ -18,5 +19,10 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	array = malloc(nmemb * size);
 	if (array == NULL)
 		return (NULL);
-	return (array);
+	while (counter < nmemb)
+	{
+		*((unsigned int *)array + counter) = 0;
+		counter++;
+	}
+	return ((void *)array);
 }
