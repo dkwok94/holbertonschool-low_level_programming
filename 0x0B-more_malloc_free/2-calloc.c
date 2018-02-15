@@ -21,7 +21,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		return (NULL);
 	while (counter < nmemb)
 	{
-		*((unsigned int *)array + counter) = 0;
+		*((char *)array + counter) = 0;
 		counter++;
 	}
 	return ((void *)array);
