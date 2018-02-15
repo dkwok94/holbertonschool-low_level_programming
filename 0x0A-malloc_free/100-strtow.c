@@ -17,6 +17,8 @@ char **strtow(char *str)
 		return (NULL);
 
 	wcount = wordcount(str);
+	if (wcount == 0)
+		return (NULL);
 	array = malloc(sizeof(char *) * (wcount + 1));
 	if (array == NULL)
 		return (NULL);
@@ -37,6 +39,7 @@ char **strtow(char *str)
 					free(array[aindex]);
 					aindex--;
 				}
+				free(array);
 				return (NULL);
 			}
 			i = fillarray(startofword, str, array[aindex]);
