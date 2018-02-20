@@ -60,14 +60,11 @@ char *_strdup(char *str)
 		length++;
 		i++;
 	}
-
-	i = 0;
 	string = malloc(sizeof(char) * (length + 1));
-
 	if (string == NULL)
 		return (NULL);
-
-	while (i < length + 1)
+	i = 0;
+	while (i < length)
 	{
 		*(string + i) = *(str + i);
 		i++;
