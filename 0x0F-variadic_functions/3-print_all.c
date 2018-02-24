@@ -61,8 +61,9 @@ void print_all(const char * const format, ...)
 {
 	va_list printlist;
 	int i, formatcount = 0;
-	char *separray[] = {"", ", "};
-	char *sep = separray[0];
+	char *sep1 = "";
+	char *sep2 = ", ";
+	char *sep = sep1;
 	type_t datatype[] = {
 		{"c", printchar},
 		{"i", printint},
@@ -80,7 +81,7 @@ void print_all(const char * const format, ...)
 			{
 				printf("%s", sep);
 				(datatype[i].printop)(printlist);
-				sep = separray[1];
+				sep = sep2;
 			}
 			i++;
 		}
