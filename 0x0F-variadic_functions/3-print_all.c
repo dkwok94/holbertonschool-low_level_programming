@@ -80,11 +80,11 @@ void print_all(const char * const format, ...)
 			{
 				printf("%s", sep);
 				(datatype[i].printop)(printlist);
+				sep = separray[1];
 			}
 			i++;
 		}
 		formatcount++;
-		sep = separray[1];
 	}
 	printf("\n");
 	va_end(printlist);
