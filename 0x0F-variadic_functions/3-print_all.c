@@ -46,7 +46,7 @@ void printstring(va_list list)
 	char *string;
 
 	string = va_arg(list, char *);
-	if (*string == '\0')
+	if (string == NULL)
 		string = "(nil)";
 	printf("%s", string);
 }
