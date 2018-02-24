@@ -72,7 +72,7 @@ void print_all(const char * const format, ...)
 		{NULL, NULL} };
 
 	va_start(printlist, format);
-	while (format[formatcount] != '\0')
+	while (format[formatcount] != '\0' && format != NULL)
 	{
 		i = 0;
 		while (datatype[i].character != NULL)
