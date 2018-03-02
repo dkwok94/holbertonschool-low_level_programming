@@ -10,13 +10,13 @@
  */
 unsigned int stringlen(const char *str)
 {
-        unsigned int i = 0;
+	unsigned int i = 0;
 
-        while (str[i] != '\0')
-        {
-                i++;
-        }
-        return (i);
+	while (str[i] != '\0')
+	{
+		i++;
+	}
+	return (i);
 }
 
 /**
