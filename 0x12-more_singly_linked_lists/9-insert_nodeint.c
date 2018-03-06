@@ -30,8 +30,11 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 		copy = copy->next;
 	}
 
-	if (nodes < idx)
+	if (nodes <= idx)
+	{
+		free(new);
 		return (NULL);
+	}
 
 	copy = *head;
 
