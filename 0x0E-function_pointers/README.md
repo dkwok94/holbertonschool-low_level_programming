@@ -15,7 +15,7 @@
 **3-op_functions.c**
 > Contains all functions for addition, subtraction, multiplication, division, and modulus
 
-**3-get_op_func.c
+**3-get_op_func.c**
 > Function that contains an array of structures which decide which function pointer to pass back based on what character is read in
 
 **3-calc.h**
