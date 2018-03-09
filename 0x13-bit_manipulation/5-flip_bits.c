@@ -6,6 +6,7 @@
  *@n: original number
  *@m: number to convert to find number of flips
  *
+ *Return: the number of bits flipped to get from one number to another
  */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
