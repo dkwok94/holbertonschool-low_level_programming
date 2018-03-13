@@ -26,14 +26,17 @@ int create_file(const char *filename, char *text_content)
 	if (filedes == -1)
 		return (-1);
 
-	if (text_content == NULL || numletters == 0)
+	if (text_content == NULL)
 	{
 		close(filedes);
 		return (1);
 	}
-	byteswritten = write(filedes, text_content, numletters);
-	if (byteswritten == -1)
-		return (-1);
+	else
+	{
+		byteswritten = write(filedes, text_content, numletters);
+		if (byteswritten == -1)
+			return (-1);
+	}
 	close(filedes);
 	return (1);
 }
