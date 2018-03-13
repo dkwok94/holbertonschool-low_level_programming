@@ -25,18 +25,15 @@ int create_file(const char *filename, char *text_content)
 		close(filedes);
 		return (1);
 	}
-	else
+	while (*(text_content + i) != '\0')
 	{
-		while (*(text_content + i) != '\0')
-		{
-			numletters++;
-			i++;
-		}
-
-		byteswritten = write(filedes, text_content, numletters);
-		if (byteswritten == -1)
-			return (-1);
+		numletters++;
+		i++;
 	}
+
+	byteswritten = write(filedes, text_content, numletters);
+	if (byteswritten == -1)
+		return (-1);
 	close(filedes);
 	return (1);
 }
