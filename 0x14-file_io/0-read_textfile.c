@@ -12,9 +12,13 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	ssize_t bytesread;
 	ssize_t byteswritten;
 	ssize_t bytes = letters;
-	char buf[letters];
+	char *buf;
 
 	if (filename == NULL)
+		return (0);
+
+	buf = malloc(sizeof(char) * letters);
+	if (buf == NULL)
 		return (0);
 
 	filedes = open(filename, O_RDWR);
@@ -32,5 +36,6 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (byteswritten != bytesread)
 		return (0);
 	close(filedes);
+	free(buf);
 	return (byteswritten);
 }
