@@ -21,12 +21,12 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (buf == NULL)
 		return (0);
 
-	filedes = open(filename, O_RDWR);
+	filedes = open(filename, O_RDONLY);
 	if (filedes == -1)
 		return (0);
 
 	bytesread = read(filedes, buf, letters);
-	if (errno == EINTR || bytesread > bytes)
+	if (bytesread == -1 || bytesread > bytes)
 		return (0);
 
 	byteswritten = write(STDOUT_FILENO, buf, bytesread);
