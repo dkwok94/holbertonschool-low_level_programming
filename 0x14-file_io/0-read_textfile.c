@@ -29,7 +29,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (errno == EINTR || bytesread > bytes)
 		return (0);
 
-	byteswritten = write(1, buf, bytesread);
+	byteswritten = write(STDOUT_FILENO, buf, bytesread);
 
 	if (byteswritten == -1 || byteswritten > bytes)
 		return (0);
