@@ -22,36 +22,26 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	new->prev = NULL;
 	if (*h == NULL && idx != 0)
 		return (fail_op(new));
-	else if (*h == NULL && idx == 0)
+	if (idx == 0)
+		return (add_dnodeint(h, n));
+	while (temp != NULL)
 	{
-		*h = new;
-		return (new);
-	}
-	else
-	{
-		while (temp->next != NULL)
-		{
-			nodes++;
-			if (nodes - 1 == idx)
-			{
-				new->next = temp;
-				new->prev = temp->prev;
-				temp->prev->next = new;
-				temp->prev = new;
-				return (new);
-			}
-			temp = temp->next;
-		}
 		nodes++;
-		if (nodes + 1 == idx)
+		if (nodes - 1 == idx)
 		{
-			temp->next = new;
-			new->prev = temp;
+			new->next = temp;
+			new->prev = temp->prev;
+			temp->prev->next = new;
+			temp->prev = new;
 			return (new);
 		}
-		return (fail_op(new));
+		temp = temp->next;
 	}
+	if (nodes == idx)
+		return (add_dnodeint_end(h, n));
+	return (fail_op(new));
 }
+
 
 /**
  *fail_op - handles failure of insertion to the doubly linked list
