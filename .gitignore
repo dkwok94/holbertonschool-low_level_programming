@@ -1,5 +1,7 @@
 # Ignore all
 *
+# Unignore submodules
+!0x*
 
 # Unignore all with extensions
 !*.*
