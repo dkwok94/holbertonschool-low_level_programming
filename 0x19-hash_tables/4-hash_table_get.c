@@ -13,15 +13,16 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 
 	if (ht == NULL)
 		return (NULL);
+
 	if (key == NULL || key[0] == '\0')
 		return (NULL);
 
 	index = key_index((unsigned char *)key, ht->size);
+	node = ht->array[index];
 	if (ht->array[index] == NULL)
 		return (NULL);
 	else /*Check if there is a linked list entry*/
 	{
-		node = ht->array[index];
 		while (node != NULL)
 		{
 			if (strcmp(node->key, key) == 0)
