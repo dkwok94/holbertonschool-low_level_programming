@@ -13,10 +13,7 @@ void hash_table_print(const hash_table_t *ht)
 	int multiplenodes = 0;
 
 	if (ht == NULL)
-		printf("{}\n");
-
-	if (ht->size == 0 || ht->array == NULL)
-		printf("{}\n");
+		return;
 
 	printf("{");
 	while (iterator < ht->size)
