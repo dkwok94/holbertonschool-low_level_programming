@@ -22,7 +22,7 @@ void hash_table_print(const hash_table_t *ht)
 	while (iterator < ht->size)
 	{
 		node = ht->array[iterator];
-		if (node != NULL)
+		while (node != NULL)
 		{
 			if (multiplenodes == 0)
 			{
@@ -31,6 +31,7 @@ void hash_table_print(const hash_table_t *ht)
 			}
 			else
 				printf(", '%s': '%s'", node->key, node->value);
+			node = node->next;
 		}
 		iterator++;
 	}
