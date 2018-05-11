@@ -14,23 +14,19 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 	if (ht == NULL)
 		return (NULL);
 
-	if (key == NULL || key[0] == '\0')
+	if (key[0] == '\0' || key == NULL)
 		return (NULL);
 
 	index = key_index((unsigned char *)key, ht->size);
 	node = ht->array[index];
-	if (ht->array[index] == NULL)
+	if (node == NULL)
 		return (NULL);
-	else /*Check if there is a linked list entry*/
+/*Check if there is a linked list entry*/
+	while (node != NULL)
 	{
-		while (node != NULL)
-		{
-			if (strcmp(node->key, key) == 0)
-				return (node->value);
-
-			else
-				node = node->next;
-		}
-		return (NULL);
+		if (strcmp(node->key, key) == 0)
+			return (node->value);
+		node = node->next;
 	}
+	return (NULL);
 }
