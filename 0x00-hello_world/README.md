@@ -1,6 +1,7 @@
-# 0x00.
+# 0x00. C - Hello, World
 
 ## Overview
+This project is the first C project at Holberton School. It deals with the `main` function, `printf`, `puts`, `putchar`, compilation using `gcc`, and some general history of the C programming language.
 
 ## Requirements
 ### Shell Scripts
