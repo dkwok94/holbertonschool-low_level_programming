@@ -1,6 +1,7 @@
-# 0x00.
+# 0x01. C - Variables, if, else, while
 
 ## Overview
+This project focused on teaching conditionals, relational operators, logical operators, arithmetic operators, `if`, `if...else`, variable data types, `while` and `for` loops, the `ASCII` character set, and the `gcc` `-m32` and `-m64` flags.
 
 ## Requirements
 ### C Scripts
