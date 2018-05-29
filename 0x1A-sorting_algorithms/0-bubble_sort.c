@@ -11,6 +11,10 @@ void bubble_sort(int *array, size_t size)
 	size_t max_comp, i, j;
 	int temp;
 
+	if (array == NULL || size == 0 || size == 1)
+		return;
+
+
 	for (max_comp = size - 1; max_comp > 0; max_comp--)
 	{
 		for (i = 0, j = 1; j <= max_comp; i++, j++)
