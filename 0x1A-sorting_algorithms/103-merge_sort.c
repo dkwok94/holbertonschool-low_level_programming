@@ -75,7 +75,10 @@ void merge_break(int *array, int *buf, int left, int right)
 	if (left >= right)
 		return;
 
-	middle = (left + right) / 2;
+	if ((right - left) % 2 == 0)
+		middle = ((right - left) / 2) + left - 1;
+	else
+		middle = ((right - left) / 2) + left;
 
 	merge_break(array, buf, left, middle);
 	merge_break(array, buf, middle + 1, right);
