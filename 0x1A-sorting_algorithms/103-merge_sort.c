@@ -25,13 +25,13 @@ void print_merge(int *array, int left, int right)
 /**
  *merge - merges subarrays back in order
  *@array: the array to be sorted
- *@dup: the duplicate array
+ *@buf: array buffer
  *@left: the left index
  *@middle: the middle index (ie boundary)
  *@right: the right index
  *
  */
-void merge(int *array, int *dup, int left, int middle, int right)
+void merge(int *array, int *buf, int left, int middle, int right)
 {
 	int i = left, j = middle + 1, k = left;
 
@@ -39,13 +39,13 @@ void merge(int *array, int *dup, int left, int middle, int right)
 	{
 		if (i <= middle && (j > right || array[i] < array[j]))
 		{
-			dup[k] = array[i];
+			buf[k] = array[i];
 			i++;
 		}
 
 		else
 		{
-			dup[k] = array[j];
+			buf[k] = array[j];
 			j++;
 		}
 		k++;
@@ -54,7 +54,7 @@ void merge(int *array, int *dup, int left, int middle, int right)
 	k = left;
 	while (k <= right)
 	{
-		array[k] = dup[k];
+		array[k] = buf[k];
 		k++;
 	}
 }
@@ -62,26 +62,23 @@ void merge(int *array, int *dup, int left, int middle, int right)
 /**
  *merge_break - merge sort with indices
  *@array: the array to sort
+ *@buf: array buffer
  *@left: the left index of the subarray
  *@right: the right index of the subarray
- *@dup: duplicate array
  *
  *Return: void
  */
-void merge_break(int *array, int left, int right, int *dup)
+void merge_break(int *array, int *buf, int left, int right)
 {
 	int middle;
 
 	if (left >= right)
 		return;
 
-	if ((right - left) % 2 == 0)
-		middle = ((right - left) / 2) + left - 1;
-	else
-		middle = ((right - left) / 2) + left;
+	middle = (left + right) / 2;
 
-	merge_break(array, left, middle, dup);
-	merge_break(array, middle + 1, right, dup);
+	merge_break(array, buf, left, middle);
+	merge_break(array, buf, middle + 1, right);
 
 	printf("Merging...\n");
 	printf("[left]: ");
@@ -90,7 +87,7 @@ void merge_break(int *array, int left, int right, int *dup)
 	printf("[right]: ");
 	print_merge(array, middle + 1, right);
 
-	merge(array, dup, left, middle, right);
+	merge(array, buf, left, middle, right);
 
 	printf("[Done]: ");
 	print_merge(array, left, right);
@@ -105,13 +102,13 @@ void merge_break(int *array, int left, int right, int *dup)
  */
 void merge_sort(int *array, size_t size)
 {
-	int *duplicate;
+	int *buf;
 
-	duplicate = malloc(sizeof(int) * size);
-	if (duplicate == NULL)
+	buf = malloc(sizeof(int) * size);
+	if (buf == NULL)
 		return;
 
-	merge_break(array, 0, size - 1, duplicate);
+	merge_break(array, buf, 0, size - 1);
 
-	free(duplicate);
+	free(buf);
 }
