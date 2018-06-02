@@ -24,14 +24,14 @@ void print_merge(int *array, int left, int right)
 
 /**
  *merge - merges subarrays back in order
- *@dup: the duplicate array
  *@array: the array to be sorted
+ *@dup: the duplicate array
  *@left: the left index
  *@middle: the middle index (ie boundary)
  *@right: the right index
  *
  */
-void merge(int *dup, int *array, int left, int middle, int right)
+void merge(int *array, int *dup, int left, int middle, int right)
 {
 	int i = left, j = middle + 1, k = left;
 
@@ -51,6 +51,12 @@ void merge(int *dup, int *array, int left, int middle, int right)
 		k++;
 	}
 
+	k = left;
+	while (k <= right)
+	{
+		array[k] = dup[k];
+		k++;
+	}
 }
 
 /**
@@ -74,15 +80,15 @@ void merge_break(int *array, int left, int right, int *dup)
 	else
 		middle = ((right - left) / 2) + left;
 
-	merge_break(dup, left, middle, array);
-	merge_break(dup, middle + 1, right, array);
+	merge_break(array, left, middle, dup);
+	merge_break(array, middle + 1, right, dup);
 
 	printf("Merging...\n");
 	printf("[left]: ");
-	print_merge(dup, left, middle);
+	print_merge(array, left, middle);
 
 	printf("[right]: ");
-	print_merge(dup, middle + 1, right);
+	print_merge(array, middle + 1, right);
 
 	merge(array, dup, left, middle, right);
 
@@ -99,18 +105,11 @@ void merge_break(int *array, int left, int right, int *dup)
  */
 void merge_sort(int *array, size_t size)
 {
-	size_t i = 0;
 	int *duplicate;
 
 	duplicate = malloc(sizeof(int) * size);
 	if (duplicate == NULL)
 		return;
-
-	while (i < size)
-	{
-		duplicate[i] = array[i];
-		i++;
-	}
 
 	merge_break(array, 0, size - 1, duplicate);
 
