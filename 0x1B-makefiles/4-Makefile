@@ -5,6 +5,9 @@ NAME = holberton
 RM = rm -f
 CFLAGS = -Wall -Werror -Wextra -pedantic
 
+%.o: %.c
+	$(CC) $(CFLAGS)	-c -o $@ $<
+
 all: $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 
