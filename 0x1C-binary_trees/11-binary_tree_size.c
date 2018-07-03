@@ -14,9 +14,9 @@ size_t subtreenodecount(const binary_tree_t *tree, size_t count)
 		return (1);
 
 	if (tree->left != NULL)
-		return (count + subtreenodecount(tree->left, count));
+		count += subtreenodecount(tree->left, 1);
 	if (tree->right != NULL)
-		return (count + subtreenodecount(tree->right, count));
+		count += subtreenodecount(tree->right, 1);
 	return (count);
 }
 
