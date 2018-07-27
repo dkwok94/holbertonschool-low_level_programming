@@ -21,18 +21,21 @@ This project got us more familiar with nested loops, functions and how to use th
 ### Mandatory
 **[0-holberton.c](0-holberton.c)** - This program prints ```Holberton``` followed by a new line using a ```_putchar``` function contained in another file. This was to help us get used to using custom header files
 ```
+$  gcc -Wall -pedantic -Werror -Wextra _putchar.c 0-holberton.c -o 0-holberton
 $ ./0-holberton 
 Holberton
 ```
 
 **[1-alphabet.c](1-alphabet.c)** - This function prints the alphabet, in lower case, followed by a new line. We could only use `_putchar` twice.
 ```
+$ gcc -Wall -pedantic -Werror -Wextra _putchar.c 1-main.c 1-alphabet.c -o 1-alphabet
 $ ./1-alphabet 
 abcdefghijklmnopqrstuvwxyz
 ```
 
 **[2-print_alphabet_x10.c](2-print_alphabet_x10.c)** - This function prints the alphabet 10 times in lowercase, followed by a new line.
 ```
+$ gcc -Wall -pedantic -Werror -Wextra _putchar.c 2-main.c 2-print_alphabet_x10.c -o 2-alphabet_x10
 $ ./2-alphabet_x10 
 abcdefghijklmnopqrstuvwxyz
 abcdefghijklmnopqrstuvwxyz
@@ -48,6 +51,7 @@ abcdefghijklmnopqrstuvwxyz
 
 **[3-islower.c](3-islower.c)** - This function checks for lowercase characters and returns 1 if it is lowercase and 0 otherwise.
 ```
+$ gcc -Wall -pedantic -Werror -Wextra _putchar.c 3-main.c 3-islower.c -o 3-islower
 $ cat 3-main.c 
 #include "holberton.h"
 
@@ -76,6 +80,7 @@ $ ./3-islower
 
 **[4-isalpha.c](4-isalpha.c)** - This function checks if the character is a letter and returns 1 if it is a lowercase or uppercase letter and 0 otherwise.
 ```
+$ gcc -Wall -pedantic -Werror -Wextra _putchar.c 4-main.c 4-isalpha.c -o 4-isalpha
 $ cat 4-main.c 
 #include "holberton.h"
 
@@ -106,6 +111,7 @@ $ ./4-isalpha
 
 **[5-sign.c](5-sign.c)** - This function prints the sign of a number. It returns 1 and prints ```+``` if the number is greater than zero, returns 0 and prints ```0``` if the number is zero, and  returns -1 and prints ```-``` if it is negative.
 ```
+$ gcc -Wall -pedantic -Werror -Wextra _putchar.c 5-main.c 5-sign.c -o 5-sign
 $ ./5-sign 
 +, 1
 0, 0
@@ -124,13 +130,16 @@ $ ./6-abs
 
 **[7-print_last_digit.c](7-print_last_digit.c)** - This function prints the last digit of a number and returns the value of the last digit.
 ```
+$ gcc -Wall -pedantic -Werror -Wextra _putchar.c 7-main.c 7-print_last_digit.c -o 7-last_digit
+$ gcc -Wall -pedantic -Werror -Wextra _putchar.c 6-main.c 6-abs.c -o 6-abs
 $ ./7-last_digit 
 8044
 ```
 
 **[8-24_hours.c](8-24_hours.c)** - This function prints every minute of the day starting from 00:00 to 23:59.
 ```
-./8-24 | head
+$ gcc -Wall -pedantic -Werror -Wextra _putchar.c 8-main.c 8-24_hours.c -o 8-24
+$ ./8-24 | head
 00:00
 00:01
 00:02
@@ -157,6 +166,7 @@ $ ./8-24 | tail
 
 **[9-times_table.c](9-times_table.c)** - This function prints a multiplication table for the number 9
 ```
+$ gcc -Wall -pedantic -Werror -Wextra _putchar.c 9-main.c 9-times_table.c -o 9-times_table
 $ ./9-times_table | cat -e
 0,  0,  0,  0,  0,  0,  0,  0,  0,  0$
 0,  1,  2,  3,  4,  5,  6,  7,  8,  9$
@@ -184,12 +194,14 @@ $ ./9-times_table | tr ' ' . | cat -e
 
 **[10-add.c](10-add.c)** - This function adds two numbers and returns the sum.
 ```
+$ gcc -Wall -pedantic -Werror -Wextra _putchar.c 10-main.c 10-add.c -o 10-add
 $ ./10-add 
 98
 ```
 
 **[11-print_to_98.c](11-print_to_98.c)** - This function prints all natural numbers from a number ```n``` to 98 where ```n``` is the starting number. THe numbers are printed in order in a comma separated list. **The standard library was allowed for this particular function**
 ```
+$ gcc -Wall -pedantic -Werror -Wextra _putchar.c 11-main.c 11-print_to_98.c -o 11-98
 $ ./11-98 
 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98
 98
@@ -202,6 +214,7 @@ $ ./11-98
 ### Advanced
 **[100-times_table.c](100-times_table.c)** - This function prints a multiplication table for any number between 0 and 14 inclusive.
 ```
+$ gcc -Wall -pedantic -Werror -Wextra _putchar.c 100-main.c 100-times_table.c -o 100-times_table
 $ ./100-times_table 
 0,   0,   0,   0
 0,   1,   2,   3
