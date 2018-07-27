@@ -71,7 +71,7 @@ $ ./6-puts2
 02468
 ```
 
-**[7-puts_half.c](7-puts_half.c)** - Function prints the upper half of a string
+**[7-puts_half.c](7-puts_half.c)** - Function prints the latter half of a string. It should print the last n characters if the number of characters is odd where n = (length_of_the_string - 1) / 2.
 ```
 $ gcc -Wall -pedantic -Werror -Wextra _putchar.c 7-main.c 7-puts_half.c -o 7-puts_half
 $ ./7-puts_half 
@@ -93,7 +93,7 @@ First, solve the problem. Then, write the code
 First, solve the problem. Then, write the code
 ```
 
-**[100-atoi.c](100-atoi.c)** - Function converts a string to an integer
+**[100-atoi.c](100-atoi.c)** - Function converts a string to an integer. This function should work for int_max and int_min. Additionally, if there are no numbers, return 0. All the `+` and `-` signs must be taken into account. The `long` data type is not allowed. No hard-coding special values and array variable types cannot be declared.
 ```
 $ gcc -Wall -pedantic -Werror -Wextra -fsanitize=signed-integer-overflow 100-main.c 100-atoi.c -o 100-atoi
 $ ./100-atoi 
