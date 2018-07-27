@@ -1,6 +1,7 @@
 # 0x02. C - Functions, nested loops
 
 ## Overview
+This project got us more familiar with nested loops, functions and how to use them, the differences between declarations and functions, prototypes, header files, and variable scope.
 
 ## Requirements
 ### C Scripts
