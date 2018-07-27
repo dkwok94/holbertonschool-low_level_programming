@@ -1,35 +1,113 @@
-# List of Scripts for This Assignment (C - Pointers, arrays, and strings)
-### Most of these programs were not allowed to use the standard library unless otherwise stated.
+# 0x04. C - Pointers, arrays, and strings
 
-**0-reset_to_98.c**
-> Function updates an integer value to 98 using pointers
+## Overview
+The objective of this project was to introduce us to pointers, arrays, the differences between them, and also how to use strings and manipulate them (ie. array of characters).
 
-**1-swap.c**
-> Function swaps two numbers
+## Requirements
+### C Scripts
+* Allowed editors: `vi`, `vim`, `emacs`
+* All your files will be compiled on Ubuntu 14.04 LTS
+* Your programs and functions will be compiled with gcc 4.8.4 using the flags `-Wall -Werror -Wextra and -pedantic`
+* All your files should end with a new line
+* Your code should use the Betty style. It will be checked using `betty-style.pl` and `betty-doc.pl`
+* You are not allowed to use global variables
+* No more than 5 functions per file
+* You are not allowed to use the standard library. Any use of functions like `printf`, `puts`, etc… is forbidden
+* You are allowed to use [`_putchar`](https://github.com/holbertonschool/_putchar.c/blob/master/_putchar.c)
+* The prototypes of all your functions should be included in your header file called `holberton.h`
+* All your header files should be include guarded
 
-**2-strlen.c**
-> Function returns the length of a string
+## Tasks
+### Mandatory
+**[0-reset_to_98.c](0-reset_to_98.c)** - Function updates an integer value to 98 using pointers
+```
+$ gcc -Wall -pedantic -Werror -Wextra 0-main.c 0-reset_to_98.c -o 0-98
+$ ./0-98 
+n=402
+n=98
+```
 
-**3-puts.c**
-> Function prints a string to stdout
+**[1-swap.c](1-swap.c)** - Function swaps two numbers
+```
+$ gcc -Wall -pedantic -Werror -Wextra 1-main.c 1-swap.c -o 1-swap
+$ ./1-swap 
+a=98, b=42
+a=42, b=98
+```
 
-**4-print_rev.c**
-> Function prints a string in reverse
+**[2-strlen.c](2-strlen.c)** - Function returns the length of a string
+```
+$ gcc -Wall -pedantic -Werror -Wextra 2-main.c 2-strlen.c -o 2-strlen
+$ ./2-strlen 
+10
+```
 
-**5-rev_string.c**
-> Function reverses a string at the memory address
+**[3-puts.c](3-puts.c)** - Function prints a string to stdout
+```
+$ gcc -Wall -pedantic -Werror -Wextra _putchar.c 3-main.c 3-puts.c -o 3-puts
+$ ./3-puts 
+I do not fear computers. I fear the lack of them - Isaac Asimov
+```
 
-**6-puts2.c**
-> Function prints one char out of every 2 of a string
+**[4-print_rev.c](4-print_rev.c)** - Function prints a string in reverse
+```
+$ gcc -Wall -pedantic -Werror -Wextra _putchar.c 4-main.c 4-print_rev.c -o 4-print_rev
+$ ./4-print_rev 
+vomisA caasI - meht fo kcal eht raef I .sretupmoc raef ton od I
+```
 
-**7-puts_half.c**
-> Function prints the upper half of a string
+**[5-rev_string.c](5-rev_string.c)** - Function reverses a string at the memory address
+```
+$ gcc -Wall -pedantic -Werror -Wextra 5-main.c 5-rev_string.c -o 5-rev_string
+$ ./5-rev_string 
+Holberton
+notrebloH
+```
 
-**8-print_array.c**
-> Function prints n elements of an array
+**[6-puts2.c](6-puts2.c)** - Function prints one char out of every 2 of a string
+```
+$ gcc -Wall -pedantic -Werror -Wextra _putchar.c 6-main.c 6-puts2.c -o 6-puts2
+$ ./6-puts2 
+02468
+```
 
-**9-strcpy.c**
-> Copies a string from ```src``` to a buffer pointed to by ```dest```
+**[7-puts_half.c](7-puts_half.c)** - Function prints the upper half of a string
+```
+$ gcc -Wall -pedantic -Werror -Wextra _putchar.c 7-main.c 7-puts_half.c -o 7-puts_half
+$ ./7-puts_half 
+56789
+```
 
-**10-atoi.c**
-> Function converts a string to an integer
+**[8-print_array.c](8-print_array.c)** - Function prints n elements of an array
+```
+$ gcc -Wall -pedantic -Werror -Wextra 8-main.c 8-print_array.c -o 8-print_array
+$ ./8-print_array 
+98, 402, -198, 298, -1024
+```
+
+**[9-strcpy.c](9-strcpy.c)** - Copies a string from `src` to a buffer pointed to by `dest`
+```
+$ gcc -Wall -pedantic -Werror -Wextra 9-main.c 9-strcpy.c -o 9-strcpy
+$ ./9-strcpy 
+First, solve the problem. Then, write the code
+First, solve the problem. Then, write the code
+```
+
+**[100-atoi.c](100-atoi.c)** - Function converts a string to an integer
+```
+$ gcc -Wall -pedantic -Werror -Wextra -fsanitize=signed-integer-overflow 100-main.c 100-atoi.c -o 100-atoi
+$ ./100-atoi 
+98
+-402
+-98
+214748364
+0
+402
+98
+402
+```
+
+
+### Advanced
+
+2018 - All programs written by Derek Kwok ([@dlangshk](https://twitter.com/dlangshk)) at [Holberton School](https://www.holbertonschool.com/)
