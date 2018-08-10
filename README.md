@@ -33,5 +33,10 @@ The contents of the following folders are a series of programs that I wrote for 
 21. **[0x17-dynamic_libraries](https://github.com/dkwok94/holbertonschool-low_level_programming/tree/master/0x17-dynamic_libraries)**
 22. **[0x18-stacks_queues_lifo_fifo](https://github.com/dkwok94/monty/tree/fbeeb741050a3cbdc7275b1fc6dafca6591c5b43)**
 23. **[0x19-hash_tables](https://github.com/dkwok94/holbertonschool-low_level_programming/tree/master/0x19-hash_tables)**
+24. **[0x1A-sorting_algorithms](https://github.com/dkwok94/holbertonschool-low_level_programming/tree/master/0x1A-sorting_algorithms)**
+25. **[0x1B-makefiles](https://github.com/dkwok94/holbertonschool-low_level_programming/tree/master/0x1B-makefiles)**
+26. **[0x1C-binary_trees](https://github.com/dkwok94/holbertonschool-low_level_programming/tree/master/0x1C-binary_trees)**
+27. **[0x1D-search_algorithms](https://github.com/dkwok94/holbertonschool-low_level_programming/tree/master/0x1D-search_algorithms)**
+
 
 2018 - All programs written by Derek Kwok ([@dlangshk](https://twitter.com/dlangshk)) at [Holberton School](https://www.holbertonschool.com/)
