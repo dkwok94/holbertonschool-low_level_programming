@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "holberton.h"
+#include "dhk.h"
 /**
  *print_times_table - prints a multiplication table for numbers
  *between 1 and 14

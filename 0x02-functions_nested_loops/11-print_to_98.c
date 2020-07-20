@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "holberton.h"
+#include "dhk.h"
 /**
  *print_to_98 - prints numbers in increasing order to 98
  *@n: arbitrary number signifying starting point

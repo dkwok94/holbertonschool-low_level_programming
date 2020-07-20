@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "dhk.h"
 /**
  *is_palindrome - analyzes if a string is a palindrome
  *@s: string to be analyzed

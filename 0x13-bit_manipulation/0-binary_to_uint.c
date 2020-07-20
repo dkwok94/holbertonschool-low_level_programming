@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "holberton.h"
+#include "dhk.h"
 
 /**
  *power - calculates an exponent

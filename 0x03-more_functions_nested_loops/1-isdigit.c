@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "dhk.h"
 /**
  *_isdigit - Decides if some character is a digit
  *@c: Arbitrary character entered/called by user

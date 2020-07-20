@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "dhk.h"
 /**
  *_puts - prints a string followed by a new line
  *@str: String to be printed to stdout

@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "dhk.h"
 #include <stdio.h>
 /**
  *_strchr - locates a character in a string

@@ -1,4 +1,4 @@
-/*Holberton header files*/
+/*DHK header files*/
 #ifndef HOLBERTON_H
 #define HOLBERTON_H
 

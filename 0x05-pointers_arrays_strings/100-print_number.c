@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "dhk.h"
 /**
  *print_number - prints an integer
  *@n: Integer to print

@@ -13,17 +13,17 @@ This project got us more familiar with nested loops, functions and how to use th
 * You are not allowed to use global variables
 * No more than 5 functions per file
 * You are not allowed to use the standard library. Any use of functions like `printf`, `puts`, etc… is forbidden
-* You are allowed to use [`_putchar`](https://github.com/holbertonschool/_putchar.c/blob/master/_putchar.c)
-* The prototypes of all your functions should be included in your header file called `holberton.h`
+* You are allowed to use [`_putchar`](https://github.com/dhkschool/_putchar.c/blob/master/_putchar.c)
+* The prototypes of all your functions should be included in your header file called `dhk.h`
 * All your header files should be include guarded
 
 ## Tasks
 ### Mandatory
-**[0-holberton.c](0-holberton.c)** - This program prints ```Holberton``` followed by a new line using a ```_putchar``` function contained in another file. This was to help us get used to using custom header files
+**[0-dhk.c](0-dhk.c)** - This program prints ```DHK``` followed by a new line using a ```_putchar``` function contained in another file. This was to help us get used to using custom header files
 ```
-$  gcc -Wall -pedantic -Werror -Wextra _putchar.c 0-holberton.c -o 0-holberton
-$ ./0-holberton 
-Holberton
+$  gcc -Wall -pedantic -Werror -Wextra _putchar.c 0-dhk.c -o 0-dhk
+$ ./0-dhk 
+DHK
 ```
 
 **[1-alphabet.c](1-alphabet.c)** - This function prints the alphabet, in lower case, followed by a new line. We could only use `_putchar` twice.
@@ -53,10 +53,10 @@ abcdefghijklmnopqrstuvwxyz
 ```
 $ gcc -Wall -pedantic -Werror -Wextra _putchar.c 3-main.c 3-islower.c -o 3-islower
 $ cat 3-main.c 
-#include "holberton.h"
+#include "dhk.h"
 
 /**
- * main - check the code for Holberton School students.
+ * main - check the code for DHK School students.
  *
  * Return: Always 0.
  */
@@ -82,10 +82,10 @@ $ ./3-islower
 ```
 $ gcc -Wall -pedantic -Werror -Wextra _putchar.c 4-main.c 4-isalpha.c -o 4-isalpha
 $ cat 4-main.c 
-#include "holberton.h"
+#include "dhk.h"
 
 /**
- * main - check the code for Holberton School students.
+ * main - check the code for DHK School students.
  *
  * Return: Always 0.
  */
@@ -268,4 +268,4 @@ $ ./a.out
 **[104-fibonacci.c](104-fibonacci.c)** - This function prints the first 98 Fibonacci numbers. We are not allowed to use long long, malloc, pointers, arrays, tables, or structures. **NOTE**: My code is not entirely correct
 
 
-2018 - All programs written by Derek Kwok ([@dlangshk](https://twitter.com/dlangshk)) at [Holberton School](https://www.holbertonschool.com/)
+2018 - All programs written by Derek Kwok ([@dlangshk](https://twitter.com/dlangshk)) at [DHK School](https://www.dhkschool.com/)

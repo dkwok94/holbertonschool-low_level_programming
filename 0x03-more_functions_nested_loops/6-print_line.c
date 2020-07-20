@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "dhk.h"
 /**
  *print_line - Draws a straight line in the terminal
  *@n: number of times the underscore character is printed

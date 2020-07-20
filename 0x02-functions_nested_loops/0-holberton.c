@@ -1,8 +1,8 @@
-#include "holberton.h"
+#include "dhk.h"
 /**
  *main - Entry point function
  *
- *Description: This function prints "Holberton"
+ *Description: This function prints "DHK"
  *Return: 0 upon successful completion
  */
 int main(void)

@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "dhk.h"
 /**
  *is_prime_number - decides if integer is prime
  *@n: number to test

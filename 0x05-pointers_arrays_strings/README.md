@@ -13,8 +13,8 @@ This was a continuation of 0x04 with more exercises with pointers, arrays, and s
 * You are not allowed to use global variables
 * No more than 5 functions per file
 * You are not allowed to use the standard library. Any use of functions like `printf`, `puts`, etc… is forbidden
-* You are allowed to use [`_putchar`](https://github.com/holbertonschool/_putchar.c/blob/master/_putchar.c)
-* The prototypes of all your functions should be included in your header file called `holberton.h`
+* You are allowed to use [`_putchar`](https://github.com/dhkschool/_putchar.c/blob/master/_putchar.c)
+* The prototypes of all your functions should be included in your header file called `dhk.h`
 * All your header files should be include guarded
 
 ## Tasks
@@ -140,4 +140,4 @@ $ ./100-print_numbers
 **[101-magic.c](101-magic.c)** - Function changes value of an array element by accessing memory location
 
 
-2018 - All programs written by Derek Kwok ([@dlangshk](https://twitter.com/dlangshk)) at [Holberton School](https://www.holbertonschool.com/)
+2018 - All programs written by Derek Kwok ([@dlangshk](https://twitter.com/dlangshk)) at [DHK School](https://www.dhkschool.com/)

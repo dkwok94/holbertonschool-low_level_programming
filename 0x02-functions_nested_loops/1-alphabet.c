@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "dhk.h"
 /**
  *print_alphabet - prints the letters from a to z in lowercase
  *

@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "dhk.h"
 /**
  *main - entry point
  *@ac: the number of command line arguments

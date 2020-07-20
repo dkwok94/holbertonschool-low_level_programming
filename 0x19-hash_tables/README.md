@@ -58,7 +58,7 @@ python:awesome
 Jennie:and Jay love asm
 N:queens
 Asterix:Obelix
-Betty:Holberton
+Betty:DHK
 98:Battery Street
 c:isfun
 javascript:(null)
@@ -68,7 +68,7 @@ javascript:(null)
 ```
 vagrant:0x19-hash_tables$ ./f
 {}
-{'Betty': 'Holberton', 'python': 'awesome', 'Jennie': 'and Jay love asm', '98': 'Battery Street', 'N': 'queens', 'c': 'fun', 'Asterix': 'Obelix'}
+{'Betty': 'DHK', 'python': 'awesome', 'Jennie': 'and Jay love asm', '98': 'Battery Street', 'N': 'queens', 'c': 'fun', 'Asterix': 'Obelix'}
 ```
 
 **[6-hash_table_delete.c](6-hash_table_delete.c)** - Function deletes the hash table
@@ -79,7 +79,7 @@ vagrant:0x19-hash_tables$ valgrind ./g
 ==3155== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
 ==3155== Command: ./g
 ==3155==
-{'Betty': 'Holberton', 'mentioner': 'Jennie', 'hetairas': 'Jennie Z Chu', 'python': 'awesome', 'Jennie': 'and Jay love asm', '98': 'Battery Street', 'N': 'queens', 'c': 'fun', 'Tim': 'Britton', 'Asterix': 'Obelix'}
+{'Betty': 'DHK', 'mentioner': 'Jennie', 'hetairas': 'Jennie Z Chu', 'python': 'awesome', 'Jennie': 'and Jay love asm', '98': 'Battery Street', 'N': 'queens', 'c': 'fun', 'Tim': 'Britton', 'Asterix': 'Obelix'}
 Starting delete
 ==3155==
 ==3155== HEAP SUMMARY:
@@ -92,4 +92,4 @@ Starting delete
 ==3155== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 ```
 
-2018 - All programs written by Derek Kwok ([@dlangshk](https://twitter.com/dlangshk)) at [Holberton School](https://www.holbertonschool.com/)
+2018 - All programs written by Derek Kwok ([@dlangshk](https://twitter.com/dlangshk)) at [DHK School](https://www.holbertonschool.com/)

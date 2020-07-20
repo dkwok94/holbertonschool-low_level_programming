@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "dhk.h"
 /**
  *mul - multiples two integers
  *@a: first integer to be multiplied

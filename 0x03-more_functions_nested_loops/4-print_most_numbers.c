@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "dhk.h"
 /**
  *print_most_numbers - Prints the numbers excluding 2 and 4
  *

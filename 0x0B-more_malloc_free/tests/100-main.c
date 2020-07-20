@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "dhk.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -32,7 +32,7 @@ void simple_print_buffer(char *buffer, unsigned int size)
 }
 
 /**
- * main - check the code for Holberton School students.
+ * main - check the code for DHK School students.
  *
  * Return: Always 0.
  */

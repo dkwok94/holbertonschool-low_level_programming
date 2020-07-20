@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "dhk.h"
 /**
  *print_triangle - prints triangles
  *@size: size of the triangle

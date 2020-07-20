@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "dhk.h"
 #include <stdio.h>
 /**
  *_strstr - locates a substring

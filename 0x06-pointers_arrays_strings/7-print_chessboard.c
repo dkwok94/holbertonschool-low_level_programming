@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "dhk.h"
 /**
  *print_chessboard - prints a chessboard to the terminal
  *@a: chessboard array

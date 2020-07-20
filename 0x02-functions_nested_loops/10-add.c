@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "dhk.h"
 /**
  *add - Adds two integers
  *@num1: number 1 to be added

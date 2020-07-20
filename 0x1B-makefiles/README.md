@@ -66,7 +66,7 @@ gcc    -c -o holberton.o holberton.c
 gcc main.o holberton.o -o holberton
 $ make -f 2-Makefile
 gcc main.o holberton.o -o holberton
-$ echo "/* Holberton */" >> main.c
+$ echo "/* DHK */" >> main.c
 $ make -f 2-Makefile
 gcc    -c -o main.o main.c
 gcc main.o holberton.o -o holberton
@@ -179,4 +179,4 @@ $ ./5-main.py
 * Should not compile if `m.h` header file is missing
 
 
-2018 - All programs written by Derek Kwok ([@dlangshk](https://twitter.com/dlangshk)) at [Holberton School](https://www.holbertonschool.com/)
+2018 - All programs written by Derek Kwok ([@dlangshk](https://twitter.com/dlangshk)) at [DHK School](https://www.holbertonschool.com/)

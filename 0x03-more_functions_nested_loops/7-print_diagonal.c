@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "dhk.h"
 /**
  *print_diagonal - prints diagonal lines
  *@n: number of times the character \ is printed

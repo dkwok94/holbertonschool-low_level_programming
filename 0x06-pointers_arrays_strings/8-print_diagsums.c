@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "dhk.h"
 #include <stdio.h>
 /**
  *print_diagsums - prints the sums of the two diagonals of an array

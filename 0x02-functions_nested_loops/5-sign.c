@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "dhk.h"
 /**
  *print_sign - Prints the sign of a given integer
  *@n: arbitrary number to be tested

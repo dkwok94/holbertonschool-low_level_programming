@@ -13,7 +13,7 @@ The goal of this project was to do more practice using singly linked list data s
 * You are not allowed to use global variables
 * No more than 5 functions per file
 * You are not allowed to use the standard library. Any use of functions like `printf`, `puts`, etc… is forbidden
-* You are allowed to use [`_putchar`](https://github.com/holbertonschool/_putchar.c/blob/master/_putchar.c)
+* You are allowed to use [`_putchar`](https://github.com/dhkschool/_putchar.c/blob/master/_putchar.c)
 * The prototypes of all your functions should be included in your header file called `lists.h`
 * All your header files should be include guarded
 * The data structure for this project was:
@@ -24,7 +24,7 @@ The goal of this project was to do more practice using singly linked list data s
  * @next: points to the next node
  *
  * Description: singly linked list node structure
- * for Holberton project
+ * for DHK project
  */
 typedef struct listint_s
 {
@@ -346,4 +346,4 @@ $ valgrind ./l
 ```
 
 
-2018 - All programs written by Derek Kwok ([@dlangshk](https://twitter.com/dlangshk)) at [Holberton School](https://www.holbertonschool.com/)
+2018 - All programs written by Derek Kwok ([@dlangshk](https://twitter.com/dlangshk)) at [DHK School](https://www.dhkschool.com/)

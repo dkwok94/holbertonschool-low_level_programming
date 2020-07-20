@@ -140,4 +140,4 @@ Found 999 at index: -1
 
 **[108-O](108-O)** - the average case time complexity of jump search in a skip list of size n with an express lane using `step = sqrt(n)`
 
-2018 - All programs written by Derek Kwok ([@dlangshk](https://twitter.com/dlangshk)) at [Holberton School](https://www.holbertonschool.com/)
+2018 - All programs written by Derek Kwok ([@dlangshk](https://twitter.com/dlangshk)) at [DHK School](https://www.holbertonschool.com/)

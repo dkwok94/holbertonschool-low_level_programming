@@ -21,18 +21,18 @@ The goal of this project was to learn about dynamic libraries, how they work, ho
 * You are not allowed to use global variables
 * No more than 5 functions per file
 * You are not allowed to use the standard library. Any use of functions like `printf`, `puts`, etc… is forbidden
-* You are allowed to use [`_putchar`](https://github.com/holbertonschool/_putchar.c/blob/master/_putchar.c)
-* The prototypes of all your functions should be included in your header file called `holberton.h`
+* You are allowed to use [`_putchar`](https://github.com/dhkschool/_putchar.c/blob/master/_putchar.c)
+* The prototypes of all your functions should be included in your header file called `dhk.h`
 * All your header files should be include guarded
 
 ## Tasks
 ### Mandatory
-**[libholberton.so](libholberton.so)**
-**[holberton.h](holberton.h)** - Create a dynamic library `libholberton.so` containing all the functions coded for simple operations
+**[libdhk.so](libdhk.so)**
+**[dhk.h](dhk.h)** - Create a dynamic library `libdhk.so` containing all the functions coded for simple operations
 ```
 $ ls -la lib*
--rwxrwxr-x 1 julien julien 13632 Jan  7 06:25 libholberton.so
-$ nm -D libholberton.so 
+-rwxrwxr-x 1 julien julien 13632 Jan  7 06:25 libdhk.so
+$ nm -D libdhk.so 
 0000000000000a90 T _abs
 0000000000000aa9 T _atoi
 0000000000202048 B __bss_start
@@ -65,16 +65,16 @@ $ nm -D libholberton.so
 000000000000109d T _strspn
 0000000000001176 T _strstr
                  U write
-$ gcc -Wall -pedantic -Werror -Wextra -L. 0-main.c -lholberton -o len
+$ gcc -Wall -pedantic -Werror -Wextra -L. 0-main.c -ldhk -o len
 $ ldd len 
     linux-vdso.so.1 =>  (0x00007fff5d1d2000)
-    libholberton.so => not found
+    libdhk.so => not found
     libc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007f74c6bb9000)
     /lib64/ld-linux-x86-64.so.2 (0x0000556be5b82000)
 $ export LD_LIBRARY_PATH=.:$LD_LIBRARY_PATH
 $ ldd len
     linux-vdso.so.1 =>  (0x00007fff41ae9000)
-    libholberton.so => ./libholberton.so (0x00007fd4bf2d9000)
+    libdhk.so => ./libdhk.so (0x00007fd4bf2d9000)
     libc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007fd4beef6000)
     /lib64/ld-linux-x86-64.so.2 (0x0000557566402000)
 $ ./len 
@@ -118,4 +118,4 @@ $ nm -D --defined-only liball.so
 
 
 
-2018 - All programs written by Derek Kwok ([@dlangshk](https://twitter.com/dlangshk)) at [Holberton School](https://www.holbertonschool.com/)
+2018 - All programs written by Derek Kwok ([@dlangshk](https://twitter.com/dlangshk)) at [DHK School](https://www.dhkschool.com/)

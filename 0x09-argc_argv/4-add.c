@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "holberton.h"
+#include "dhk.h"
 /**
  *main - entry point
  *@argc: number of command line arguments

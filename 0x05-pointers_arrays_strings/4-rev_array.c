@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "dhk.h"
 /**
  *reverse_array - reverses array of integers
  *@a: integer array

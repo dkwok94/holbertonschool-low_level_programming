@@ -1,10 +1,10 @@
-#include "holberton.h"
+#include "dhk.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <limits.h>
 
 /**
- * main - check the code for Holberton School students.
+ * main - check the code for DHK School students.
  *
  * Return: Always 0.
  */

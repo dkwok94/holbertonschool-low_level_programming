@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "dhk.h"
 /**
  *_islower - Decides if a character is lowercase letter
  *@c: arbitrary character

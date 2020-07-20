@@ -13,8 +13,8 @@ The goal of this project was to learn how to use the `exit` function and how to 
 * You are not allowed to use global variables
 * No more than 5 functions per file
 * You are not allowed to use the standard library. Any use of functions like `printf`, `puts`, etc… is forbidden
-* You are allowed to use [`_putchar`](https://github.com/holbertonschool/_putchar.c/blob/master/_putchar.c)
-* The prototypes of all your functions should be included in your header file called `holberton.h`
+* You are allowed to use [`_putchar`](https://github.com/dhkschool/_putchar.c/blob/master/_putchar.c)
+* The prototypes of all your functions should be included in your header file called `dhk.h`
 * All your header files should be include guarded
 
 ## Tasks
@@ -34,7 +34,7 @@ $ echo $?
 ```
 $ gcc -Wall -pedantic -Werror -Wextra 1-main.c 1-string_nconcat.c -o b
 $ ./b 
-Holberton School
+DHK School
 ```
 
 **[2-calloc.c](2-calloc.c)** - Allocates memory using malloc for an array of elements of a specific size each and initializes the memory locations to zero
@@ -78,4 +78,4 @@ $ ./e
 0x62 0x62 0x62 0x62 0x62 0x62 0x62 0x62
 ```
 
-2018 - All programs written by Derek Kwok ([@dlangshk](https://twitter.com/dlangshk)) at [Holberton School](https://www.holbertonschool.com/)
+2018 - All programs written by Derek Kwok ([@dlangshk](https://twitter.com/dlangshk)) at [DHK School](https://www.dhkschool.com/)

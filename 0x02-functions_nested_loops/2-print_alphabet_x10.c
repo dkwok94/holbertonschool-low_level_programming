@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "dhk.h"
 /**
  *print_alphabet_x10 - prints alphabet 10x
  *

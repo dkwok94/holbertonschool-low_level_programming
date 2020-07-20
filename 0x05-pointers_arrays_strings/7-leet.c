@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "dhk.h"
 #define NUMREPLCHAR 5
 /**
  *leet - encodes a string to 1337

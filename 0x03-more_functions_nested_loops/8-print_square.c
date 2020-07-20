@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "dhk.h"
 /**
  *print_square - Prints a square followed by a new line
  *@size: The size of the square

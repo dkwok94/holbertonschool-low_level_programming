@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "dhk.h"
 /**
  *_strcmp - compares two strings
  *@s1: string 1

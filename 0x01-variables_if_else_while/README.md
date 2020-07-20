@@ -106,4 +106,4 @@ vagrant:0x01-variables_if_else_while$ ./a.out
 90 92, 90 93, 90 94, 90 95, 90 96, 90 97, 90 98, 90 99, 91 92, 91 93, 91 94, 91 95, 91 96, 91 97, 91 98, 91 99, 92 93, 92 94, 92 95, 92 96, 92 97, 92 98, 92 99, 93 94, 93 95, 93 96, 93 97, 93 98, 93 99, 94 95, 94 96, 94 97, 94 98, 94 99, 95 96, 95 97, 95 98, 95 99, 96 97, 96 98, 96 99, 97 98, 97 99, 98 99
 ```
 
-2018 - All programs written by Derek Kwok ([@dlangshk](https://twitter.com/dlangshk)) at [Holberton School](https://www.holbertonschool.com/)
+2018 - All programs written by Derek Kwok ([@dlangshk](https://twitter.com/dlangshk)) at [DHK School](https://www.dhkschool.com/)

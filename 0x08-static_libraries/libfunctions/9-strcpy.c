@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "dhk.h"
 /**
  *_strcpy - copies a string to a buffer
  *@dest: buffer where string is copied

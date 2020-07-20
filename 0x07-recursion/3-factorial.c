@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "dhk.h"
 /**
  *factorial - returns factorial of a given number
  *@n: factorial number

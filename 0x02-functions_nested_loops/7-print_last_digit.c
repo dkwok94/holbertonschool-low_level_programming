@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "dhk.h"
 /**
  *print_last_digit - Prints last digit of n
  *@num: arbitrary number to be inputted into function

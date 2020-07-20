@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "dhk.h"
 /**
  *rev_string - reverses a string
  *@s: String to reverse

@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "dhk.h"
 /**
  *wildcmp - compares 2 strings for similarity
  *@s1: first string

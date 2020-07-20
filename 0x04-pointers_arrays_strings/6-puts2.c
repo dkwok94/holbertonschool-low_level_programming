@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "dhk.h"
 /**
  *puts2 - prints every 2 chars of a string
  *@str: string to be printed

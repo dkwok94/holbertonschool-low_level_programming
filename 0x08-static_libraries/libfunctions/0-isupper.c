@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "dhk.h"
 /**
  *_isupper - Checks for uppercase
  *@c: arbitrary character entered by user
