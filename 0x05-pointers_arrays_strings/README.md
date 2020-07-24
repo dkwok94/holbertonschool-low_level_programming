@@ -86,8 +86,8 @@ $ ./4-rev_array
 ```
 $ gcc -Wall -pedantic -Werror -Wextra 5-main.c 5-string_toupper.c -o 5-string_toupper
 $ ./5-string_toupper 
-HOLBERTON SCHOOL!
-HOLBERTON SCHOOL!
+DHK SCHOOL!
+DHK SCHOOL!
 ```
 
 **[6-cap_string.c](6-cap_string.c)** - Function capitalizes all words in a string where words are defined to be groups of characters in between separators like `.`, `,`, `?`, `!`, and others.

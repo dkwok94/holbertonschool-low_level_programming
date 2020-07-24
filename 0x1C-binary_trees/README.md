@@ -13,7 +13,7 @@ The goal of this project was to understand what a binary tree is, understand how
 * You are not allowed to use global variables
 * No more than 5 functions per file
 * You are not allowed to use the standard library. Any use of functions like `printf`, `puts`, etc… is forbidden
-* You are allowed to use [`_putchar`](https://github.com/holbertonschool/_putchar.c/blob/master/_putchar.c)
+* You are allowed to use [`_putchar`](https://github.com/dhkschool/_putchar.c/blob/master/_putchar.c)
 * The prototypes of all your functions should be included in your header file called `binary_trees.h`
 * All your header files should be include guarded
 * Data structures for this project are:
@@ -36,7 +36,7 @@ struct binary_tree_s
 
 typedef struct binary_tree_s binary_tree_t;
 ```
-* This [function](https://github.com/holbertonschool/0x1C.c) will be used to visualize
+* This [function](https://github.com/dhkschool/0x1C.c) will be used to visualize
 
 ## Tasks
 ### Mandatory
@@ -304,4 +304,4 @@ Uncle of 12: (nil)
 ```
 
 
-2018 - All programs written by Derek Kwok ([@dlangshk](https://twitter.com/dlangshk)) at [DHK School](https://www.holbertonschool.com/)
+2018 - All programs written by Derek Kwok ([@dlangshk](https://twitter.com/dlangshk)) at [DHK School](https://www.dhkschool.com/)

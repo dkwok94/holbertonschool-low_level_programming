@@ -1,7 +1,7 @@
 CC = gcc
-SRC = main.c holberton.c
+SRC = main.c dhk.c
 OBJ = $(SRC:.c=.o)
-NAME = holberton
+NAME = dhk
 RM = rm -f
 CFLAGS = -Wall -Werror -Wextra -pedantic
 

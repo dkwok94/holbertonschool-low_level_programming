@@ -13,7 +13,7 @@ The goal of this project was the learn at least four different sorting algorithm
 * You are not allowed to use global variables
 * No more than 5 functions per file
 * You are not allowed to use the standard library. Any use of functions like `printf`, `puts`, etc… is forbidden
-* You are allowed to use [`_putchar`](https://github.com/holbertonschool/_putchar.c/blob/master/_putchar.c)
+* You are allowed to use [`_putchar`](https://github.com/dhkschool/_putchar.c/blob/master/_putchar.c)
 * The prototypes of all your functions should be included in your header file called `sort.h`
 * All your header files should be include guarded
 * We are given `print_array` and `print_list` functions
@@ -234,4 +234,4 @@ Merging...
 ```
 
 
-2018 - All programs written by Derek Kwok ([@dlangshk](https://twitter.com/dlangshk)) at [DHK School](https://www.holbertonschool.com/)
+2018 - All programs written by Derek Kwok ([@dlangshk](https://twitter.com/dlangshk)) at [DHK School](https://www.dhkschool.com/)

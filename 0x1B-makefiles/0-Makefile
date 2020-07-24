@@ -1,5 +1,5 @@
 CC = gcc
 CFLAGS = -I.
 
-all: holberton.c main.c
-	$(CC) main.c holberton.c -o holberton
+all: dhk.c main.c
+	$(CC) main.c dhk.c -o dhk

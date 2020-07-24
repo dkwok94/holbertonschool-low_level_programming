@@ -1,6 +1,6 @@
 CC = gcc
-SRC = main.c holberton.c
+SRC = main.c dhk.c
 CFLAGS = -I.
 
 all: $(SRC)
-	$(CC) $(SRC) -o holberton
+	$(CC) $(SRC) -o dhk

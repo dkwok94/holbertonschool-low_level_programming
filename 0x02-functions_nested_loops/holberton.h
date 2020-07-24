@@ -1,6 +1,6 @@
 /*DHK header files*/
-#ifndef HOLBERTON_H
-#define HOLBERTON_H
+#ifndef DHK_H
+#define DHK_H
 
 int _putchar(char c);
 void print_alphabet(void);

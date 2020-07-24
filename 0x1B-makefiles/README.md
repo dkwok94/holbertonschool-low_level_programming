@@ -9,15 +9,15 @@ The goal of this project was to learn what `make` files were, when, why, and how
 * Version of `gcc`: 4.8.4
 * Version of `make`: GNU Make 3.81
 * All files should end with a new line
-* The [following files](https://github.com/holbertonschool/0x1B.c) are used for these tasks. 
+* The [following files](https://github.com/dhkschool/0x1B.c) are used for these tasks. 
 
 ## Tasks
 ### Mandatory
-**[0-Makefile](0-Makefile)** - The name of executable must be `holberton`, there are no variables, and the `all` rule builds the executable
+**[0-Makefile](0-Makefile)** - The name of executable must be `dhk`, there are no variables, and the `all` rule builds the executable
 ```
 $ make -f 0-Makefile 
-gcc main.c holberton.c -o holberton
-$ ./holberton 
+gcc main.c dhk.c -o dhk
+$ ./dhk 
 j#0000000000000000000000000000000000000
 j#000000000000000000@Q**g00000000000000
 j#0000000000000000*]++]4000000000000000
@@ -45,15 +45,15 @@ j#00000000000000w]+]++qw#00000000000000
 "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ```
 
-**[1-Makefile](1-Makefile)** - The name of the executable must be `holberton`, the `all` rules builds the executable, and the variables `CC` and `SRC` will be used where the first is the compiler being used and the second is the `.c` files
+**[1-Makefile](1-Makefile)** - The name of the executable must be `dhk`, the `all` rules builds the executable, and the variables `CC` and `SRC` will be used where the first is the compiler being used and the second is the `.c` files
 ```
 $ make -f 1-Makefile
-gcc main.c holberton.c -o holberton
+gcc main.c dhk.c -o dhk
 $ make -f 1-Makefile
-gcc main.c holberton.c -o holberton
+gcc main.c dhk.c -o dhk
 ```
 
-**[2-Makefile](2-Makefile)** - The name of the executable must be `holberton`, the `all` rule builds the executable, and the following variables will be used:
+**[2-Makefile](2-Makefile)** - The name of the executable must be `dhk`, the `all` rule builds the executable, and the following variables will be used:
 
 `CC`: the compiler being used  
 `SRC`: the `.c` files  
@@ -62,17 +62,17 @@ gcc main.c holberton.c -o holberton
 ```
 $ make -f 2-Makefile
 gcc    -c -o main.o main.c
-gcc    -c -o holberton.o holberton.c
-gcc main.o holberton.o -o holberton
+gcc    -c -o dhk.o dhk.c
+gcc main.o dhk.o -o dhk
 $ make -f 2-Makefile
-gcc main.o holberton.o -o holberton
+gcc main.o dhk.o -o dhk
 $ echo "/* DHK */" >> main.c
 $ make -f 2-Makefile
 gcc    -c -o main.o main.c
-gcc main.o holberton.o -o holberton
+gcc main.o dhk.o -o dhk
 ```
 
-**[3-Makefile](3-Makefile)** - The name of the executable must be `holberton`, and `all` rule builds the executable, the `clean` rule deletes all emacs and vim temporary files along with the executable, the `oclean` deletes all the object files, the `fclean` deletes the emacs temporary files, the executable, and the object files, and `re` forces recompilation of all source files. The variables:
+**[3-Makefile](3-Makefile)** - The name of the executable must be `dhk`, and `all` rule builds the executable, the `clean` rule deletes all emacs and vim temporary files along with the executable, the `oclean` deletes all the object files, the `fclean` deletes the emacs temporary files, the executable, and the object files, and `re` forces recompilation of all source files. The variables:
 
 `CC`: the compiler  
 `SRC`: the `.c` files  
@@ -85,48 +85,48 @@ $ ls -1
 1-Makefile
 2-Makefile
 3-Makefile
-holberton.c
+dhk.c
 main.c
 main.c~
 m.h
 $ make -f 3-Makefile
 gcc    -c -o main.o main.c
-gcc    -c -o holberton.o holberton.c
-gcc main.o holberton.o -o holberton
+gcc    -c -o dhk.o dhk.c
+gcc main.o dhk.o -o dhk
 $ make all -f 3-Makefile
-gcc main.o holberton.o -o holberton
+gcc main.o dhk.o -o dhk
 $ ls -1
 0-Makefile
 1-Makefile
 2-Makefile
 3-Makefile
-holberton
-holberton.c
-holberton.o
+dhk
+dhk.c
+dhk.o
 main.c
 main.c~
 main.o
 m.h
 $ make clean -f 3-Makefile 
-rm -f *~ holberton
+rm -f *~ dhk
 $ make oclean -f 3-Makefile 
-rm -f main.o holberton.o
+rm -f main.o dhk.o
 $ make fclean -f 3-Makefile 
-rm -f *~ holberton
+rm -f *~ dhk
 $ make all -f 3-Makefile
 gcc    -c -o main.o main.c
-gcc    -c -o holberton.o holberton.c
-gcc main.o holberton.o -o holberton
+gcc    -c -o dhk.o dhk.c
+gcc main.o dhk.o -o dhk
 $ make all -f 3-Makefile
-gcc main.o holberton.o -o holberton
+gcc main.o dhk.o -o dhk
 $ make re -f 3-Makefile
-rm -f main.o holberton.o
+rm -f main.o dhk.o
 gcc    -c -o main.o main.c
-gcc    -c -o holberton.o holberton.c
-gcc main.o holberton.o -o holberton
+gcc    -c -o dhk.o dhk.c
+gcc main.o dhk.o -o dhk
 ```
 
-**[4-Makefile](4-Makefile)** - The name of the executable must be `holberton`, the `all` rule builds the executable, the `clean` rule deletes all emacs and vim temporary files and the executable, the `oclean` rule deletes the object files, the `fclean` rule deletes the emacs temporary files, the executable, and the object files, and `re` forces recompilation of all source files. The following variables are used:
+**[4-Makefile](4-Makefile)** - The name of the executable must be `dhk`, the `all` rule builds the executable, the `clean` rule deletes all emacs and vim temporary files and the executable, the `oclean` rule deletes the object files, the `fclean` rule deletes the emacs temporary files, the executable, and the object files, and `re` forces recompilation of all source files. The following variables are used:
 
 `CC`: the compiler to be used  
 `SRC`: the `.c` files  
@@ -137,8 +137,8 @@ gcc main.o holberton.o -o holberton
 ```
 $ make all -f 4-Makefile
 gcc -Wall -Werror -Wextra -pedantic   -c -o main.o main.c
-gcc -Wall -Werror -Wextra -pedantic   -c -o holberton.o holberton.c
-gcc main.o holberton.o -o holberton
+gcc -Wall -Werror -Wextra -pedantic   -c -o dhk.o dhk.c
+gcc main.o dhk.o -o dhk
 ```
 
 **[5-island_perimeter.py](5-island_perimeter.py)** - Creates a function that returns the perimeter of the island described in a grid. 
@@ -179,4 +179,4 @@ $ ./5-main.py
 * Should not compile if `m.h` header file is missing
 
 
-2018 - All programs written by Derek Kwok ([@dlangshk](https://twitter.com/dlangshk)) at [DHK School](https://www.holbertonschool.com/)
+2018 - All programs written by Derek Kwok ([@dlangshk](https://twitter.com/dlangshk)) at [DHK School](https://www.dhkschool.com/)
